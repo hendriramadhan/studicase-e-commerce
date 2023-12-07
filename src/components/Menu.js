@@ -36,12 +36,12 @@ export default function Menu() {
               </Form>
             </Nav>
             {/* button */}
-            <Nav className="mx-2 fs-5 text-center">
+            <Nav className=" d-flex justify-content-between align-items-center">
               <Nav.Link
                 href="#Masuk"
                 className="navbar-expand-sm navbar-nav nav-link"
               >
-                <Button variant="outline-light" className="bi-search">
+                <Button variant="outline-light" className="chart">
                   <i class="fa-solid fa-cart-shopping"></i>
                 </Button>
               </Nav.Link>
@@ -49,7 +49,7 @@ export default function Menu() {
                 href="#Daftar"
                 className="navbar-expand-sm navbar-nav nav-link"
               >
-                <Button variant="outline-light" className="bi-search">
+                <Button variant="outline-light" className="chart">
                   Login
                 </Button>
               </Nav.Link>

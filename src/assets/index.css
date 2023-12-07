@@ -22,6 +22,60 @@ button.position-absolute.btn.btn-primary {
   line-height: 15px;
 }
 
+button.chart.btn.btn-outline-light {
+  padding: 5px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 75px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.img-slider {
+  height: 459px;
+  object-fit: cover;
+}
+
+/* span.carousel-control-prev-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 0.3rem;
+  background-color: #000000;
+  color: #fff;
+  content: "<";
+} */
+
+.carousel-indicators button[data-bs-target] {
+  border: 2px solid #ffffff;
+  top: 603px;
+  left: 681px;
+  margin-left: 1%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 0.3rem;
+  background-color: #ffffff00;
+}
+
+.carousel-indicators button.active {
+  border: 2px solid #ffffff;
+  top: 603px;
+  left: 681px;
+  width: 20px;
+  height: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: #fff;
+}
+
 @media only screen and (max-width: 768px) {
   input.bg-light.text-dark.form-control {
     width: 100%;
@@ -34,5 +88,16 @@ button.position-absolute.btn.btn-primary {
     right: 5px;
     width: 50px;
     line-height: 15px;
+  }
+
+  button.chart.btn.btn-outline-light {
+    width: 75px;
+    padding: 5px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
   }
 }
