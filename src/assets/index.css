@@ -70,10 +70,29 @@ button.chart.btn.btn-outline-light {
   left: 681px;
   width: 20px;
   height: 5px;
-  border-radius: 50px;
+  border-radius: 55px;
   cursor: pointer;
   transition: 0.5s;
   background-color: #fff;
+}
+
+/* DISKON SLIDE */
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 3px;
+}
+
+.swiper-horizontal {
+  border: solid 2px #0d6efd;
+  padding: 20px !important;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #0d6efd;
 }
 
 .swiper {
@@ -82,6 +101,7 @@ button.chart.btn.btn-outline-light {
 }
 
 .swiper-slide {
+  margin-right: 30px !important;
   font-size: 18px;
   background: #fff;
 
@@ -89,13 +109,90 @@ button.chart.btn.btn-outline-light {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 30px !important;
 }
 
-.swiper-slide img {
+/* .swiper-slide img {
   display: block;
   width: 100%;
   height: 250px;
   object-fit: cover;
+} */
+
+.card-img-top {
+  border-radius: 15px 15px 0px 0px !important;
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+span.badge.bg-primary.position-absolute {
+  right: 160px;
+  top: 10px;
+  height: 10%;
+  width: 50%;
+  font-size: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.diskon-card {
+  width: 300px;
+  height: 395px;
+  border-radius: 20px !important;
+  border: solid 5px #bebebe !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  margin-bottom: 30px !important;
+}
+
+.beli-love {
+  display: flex;
+  flex-direction: row;
+}
+
+button.beli.btn.btn-primary {
+  width: 150px;
+}
+
+i.fa-solid.fa-heart {
+  margin-left: 30px;
+  font-size: 30px;
+  align-self: center;
+  color: #ff2e2e;
+}
+
+div.swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
+  cursor: auto;
+  pointer-events: none;
+}
+
+div.swiper-button-next.swiper-button-disabled {
+  opacity: 0;
+  cursor: auto;
+  pointer-events: none;
+}
+
+/* product */
+
+.product-card {
+  height: 395px;
+  border-radius: 20px !important;
+  border: solid 5px #bebebe !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 5px 1px #adaaaa77;
+}
+
+div.product-list.col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -121,5 +218,71 @@ button.chart.btn.btn-outline-light {
     font-size: 16px;
     transition-duration: 0.4s;
     cursor: pointer;
+  }
+
+  .diskon-card {
+    width: 190px;
+    height: 200px;
+    border-radius: 20px !important;
+    border: solid 5px #bebebe !important;
+  }
+
+  .card-img-top {
+    border-radius: 15px 15px 0px 0px !important;
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  span.badge.bg-primary.position-absolute {
+    right: 105px;
+    top: 4px;
+    height: 10%;
+    width: 50%;
+    font-size: 113%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 531px) {
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .diskon-card {
+    width: 150px;
+    height: 250px;
+    border-radius: 20px !important;
+    border: solid 5px #bebebe !important;
+  }
+
+  .card-img-top {
+    border-radius: 15px 15px 0px 0px !important;
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    padding: 0px !important;
+  }
+
+  span.badge.bg-primary.position-absolute {
+    right: 88px;
+    top: 8px;
+    height: 9%;
+    width: 49%;
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.product-list.col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    width: 100%;
   }
 }
