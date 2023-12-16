@@ -1,4 +1,7 @@
 import { Navbar, Container, Nav, Form, Button, Col } from "react-bootstrap";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Login from "./Auth/Login";
+import Home from "../Home";
 
 export default function Menu() {
   return (
@@ -6,7 +9,7 @@ export default function Menu() {
       <Navbar bg="primary" data-bs-theme="dark">
         <Container>
           <Nav className="me-auto align-items-center text-light">
-            <Nav.Link href="#home">Home</Nav.Link> |
+            <Nav.Link href="/">Home</Nav.Link> |
             <Nav.Link href="#discount">Discount</Nav.Link> |
             <Nav.Link href="#category">Category</Nav.Link>
           </Nav>
@@ -45,8 +48,9 @@ export default function Menu() {
                   <i class="fa-solid fa-cart-shopping"></i>
                 </Button>
               </Nav.Link>
+
               <Nav.Link
-                href="#Daftar"
+                href="/Login"
                 className="navbar-expand-sm navbar-nav nav-link"
               >
                 <Button variant="outline-light" className="chart">
