@@ -13,7 +13,8 @@ function Login() {
   };
   return (
     <>
-      <Container fluid style={{ backgroundColor: "#bbb" }}>
+      {/* <Container style={{ backgroundColor: "#F6F6F6" }}> */}
+      <Container>
         <div className="d-flex align-items-center justify-content-center vh-100 ">
           <Card className="w-50">
             <Card.Body>

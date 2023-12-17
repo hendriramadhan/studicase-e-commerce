@@ -76,6 +76,45 @@ button.chart.btn.btn-outline-light {
   background-color: #fff;
 }
 
+i.fa-regular.fa-circle-user.fa-2xl.text-white {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+  margin-left: 9px;
+}
+
+div.dropdown-menu.show {
+  position: absolute;
+  margin-top: 1em;
+  background: #fff;
+  color: #000 !important;
+}
+
+a.dropdown-item {
+  color: #000;
+}
+
+a.dropdown-item:hover {
+  color: #000;
+  background: #fff;
+}
+
+span#nav-dropdown-dark-example.dropdown-toggle::before {
+  display: inline-block;
+  margin-left: 0.25500000000000256em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  color: #ffffff;
+}
+
+span#nav-dropdown-dark-example.dropdown-toggle::after {
+  display: none;
+}
+
 /* DISKON SLIDE */
 
 .dot {
@@ -86,6 +125,10 @@ button.chart.btn.btn-outline-light {
   display: inline-block;
   margin-left: 10px;
   margin-bottom: 3px;
+}
+
+.dot:nth-child(1) {
+  margin-left: 30px;
 }
 
 .swiper-horizontal {

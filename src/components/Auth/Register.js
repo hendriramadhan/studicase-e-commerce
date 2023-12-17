@@ -22,7 +22,7 @@ function Register() {
   };
   return (
     <>
-      {/* <Container fluid style={{ backgroundColor:"#bbb" }}> */}
+      {/* <Container fluid style={{ backgroundColor:"#F6F6F6" }}> */}
       <Container>
         <div className="d-flex align-items-center justify-content-center vh-100 ">
           <Card>
@@ -93,7 +93,7 @@ function Register() {
                   <div>
                     <p className="text-center mt-3">
                       <b>
-                        Sudah punya akun ? <a href="#daftar">Login</a>
+                        Sudah punya akun ? <a href="/Login">Login</a>
                       </b>
                     </p>
                   </div>

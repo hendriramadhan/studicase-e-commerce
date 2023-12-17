@@ -6,9 +6,9 @@ export default function Product() {
     <div>
       <h2 className="mt-3 mb-3">
         Product
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+        <span className="dot"></span>
+        <span className="dot"></span>
+        <span className="dot"></span>
       </h2>
       <Row>
         <Col className="product-list w-100 gap-2">
