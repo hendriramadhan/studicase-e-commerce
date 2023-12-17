@@ -1,12 +1,12 @@
 import { Card, Button, Row, Col, Container } from "react-bootstrap";
 import slider from "../../assets/slider1.png";
 
-export default function Whistlist() {
+export default function Wishlist() {
   return (
     <div>
       <Container>
         <h2 className="mt-5 mb-5">
-          Whistlist
+          Wishlist
           <span className="dot"></span>
           <span className="dot"></span>
           <span className="dot"></span>
