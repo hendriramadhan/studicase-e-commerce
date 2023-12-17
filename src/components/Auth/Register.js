@@ -9,6 +9,7 @@ import {
   Image,
   Form,
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Register() {
   const formInput = {
@@ -93,7 +94,7 @@ function Register() {
                   <div>
                     <p className="text-center mt-3">
                       <b>
-                        Sudah punya akun ? <a href="/Login">Login</a>
+                        Sudah punya akun ? <Link to="/Login">Login</Link>
                       </b>
                     </p>
                   </div>

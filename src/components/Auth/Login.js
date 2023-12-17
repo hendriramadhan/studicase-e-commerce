@@ -1,5 +1,6 @@
 // import "../assets/index.css";
 import { Button, Card, Container } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 
 function Login() {
   const formInput = {
@@ -30,7 +31,7 @@ function Login() {
                 <div>
                   <p className="text-center mt-3">
                     <b>
-                      Belum punya akun ? <a href="/Register">Daftar</a>
+                      Belum punya akun ? <Link to="/Register">Daftar</Link>
                     </b>
                   </p>
                 </div>

@@ -12,11 +12,11 @@ import SubMenu from "./SubMenu";
 
 export default function Menu() {
   const location = useLocation();
-  const isWhistlistPage = location.pathname === "/Whistlist";
+  const isWishlistPage = location.pathname === "/Wishlist";
   const isChart = location.pathname === "/Chart";
   const isProfile = location.pathname === "/Profile";
 
-  const activeLabel = isChart ? "Chart" : isProfile ? "Profile" : "Whistlist";
+  const activeLabel = isChart ? "Chart" : isProfile ? "Profile" : "Wishlist";
 
   return (
     <div>
@@ -25,15 +25,15 @@ export default function Menu() {
       {/* Secondary Menu */}
       <Navbar
         expand="md"
-        bg={isWhistlistPage || isChart || isProfile ? "light" : "primary"}
+        bg={isWishlistPage || isChart || isProfile ? "light" : "primary"}
         data-bs-theme="dark"
       >
         <Container>
           {/* Main title */}
-          <Navbar.Brand
-            href="#home"
+          <Navbar.Brand as={Link}
+            to="/"
             className={`${
-              isWhistlistPage || isChart || isProfile
+              isWishlistPage || isChart || isProfile
                 ? "fw-bold fs-2 text-primary"
                 : "fw-bold fs-2"
             }`}
@@ -41,7 +41,7 @@ export default function Menu() {
             Shop
           </Navbar.Brand>
           <span className=" fs-4 text-primary">
-            {isWhistlistPage || isChart || isProfile ? ` | ${activeLabel}` : ""}
+            {isWishlistPage || isChart || isProfile ? ` | ${activeLabel}` : ""}
           </span>
           {/* Search bar */}
           <Navbar.Toggle
@@ -64,12 +64,12 @@ export default function Menu() {
               </Form>
             </Nav>
             {/* Buttons and Links */}
-            {isWhistlistPage || isChart || isProfile ? (
+            {isWishlistPage || isChart || isProfile ? (
               ""
             ) : (
               <Nav className="d-flex justify-content-between align-items-center">
-                <Nav.Link
-                  href="/Chart"
+                <Nav.Link as={Link}
+                  to="/Chart"
                   className="navbar-expand-sm navbar-nav nav-link"
                 >
                   <Button variant="outline-light" className="chart">
@@ -78,6 +78,7 @@ export default function Menu() {
                 </Nav.Link>
 
                 <Link
+                    as={Link}
                   to="/Login"
                   className="navbar-expand-sm navbar-nav nav-link"
                 >
@@ -96,12 +97,12 @@ export default function Menu() {
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Profile</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Whistlist</Dropdown.Item>
+                    <Dropdown.Item as={Link} to="/Profile">Profile</Dropdown.Item>
+                    <Dropdown.Item as={Link} to="/Wishlist">Wishlist</Dropdown.Item>
                     <Dropdown.Item href="#/action-3">
                       Pengaturan Akun
                     </Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Logout</Dropdown.Item>
+                    <Dropdown.Item as={Link} to="Logout">Logout</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </Nav>
