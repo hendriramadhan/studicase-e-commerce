@@ -30,7 +30,8 @@ export default function Menu() {
       >
         <Container>
           {/* Main title */}
-          <Navbar.Brand as={Link}
+          <Navbar.Brand
+            as={Link}
             to="/"
             className={`${
               isWishlistPage || isChart || isProfile
@@ -68,21 +69,22 @@ export default function Menu() {
               ""
             ) : (
               <Nav className="d-flex justify-content-between align-items-center">
-                <Nav.Link as={Link}
+                <Nav.Link
+                  as={Link}
                   to="/Chart"
                   className="navbar-expand-sm navbar-nav nav-link"
                 >
-                  <Button variant="outline-light" className="chart">
+                  <Button variant="outline-light" className="charts">
                     <i className="fa-solid fa-cart-shopping"></i>
                   </Button>
                 </Nav.Link>
 
                 <Link
-                    as={Link}
+                  as={Link}
                   to="/Login"
                   className="navbar-expand-sm navbar-nav nav-link"
                 >
-                  <Button variant="outline-light" className="chart">
+                  <Button variant="outline-light" className="charts">
                     Login
                   </Button>
                 </Link>
@@ -97,12 +99,18 @@ export default function Menu() {
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
-                    <Dropdown.Item as={Link} to="/Profile">Profile</Dropdown.Item>
-                    <Dropdown.Item as={Link} to="/Wishlist">Wishlist</Dropdown.Item>
+                    <Dropdown.Item as={Link} to="/Profile">
+                      Profile
+                    </Dropdown.Item>
+                    <Dropdown.Item as={Link} to="/Wishlist">
+                      Wishlist
+                    </Dropdown.Item>
                     <Dropdown.Item href="#/action-3">
                       Pengaturan Akun
                     </Dropdown.Item>
-                    <Dropdown.Item as={Link} to="Logout">Logout</Dropdown.Item>
+                    <Dropdown.Item as={Link} to="Logout">
+                      Logout
+                    </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </Nav>

@@ -6,7 +6,6 @@ import Menu from "./components/Menu";
 import Register from "./components/Auth/Register";
 import Wishlist from "./components/Pages/Wishlist";
 
-
 // import routes
 import Home from "./Home";
 import Chart from "./components/Pages/Chart.js";
