@@ -1,6 +1,6 @@
 // import "../assets/index.css";
 import { Button, Card, Container } from "react-bootstrap";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Login() {
   const formInput = {
@@ -21,9 +21,23 @@ function Login() {
             <Card.Body>
               <div style={{ padding: "5%" }}>
                 <form action="">
-                  <input type="email" style={formInput} name="" id="" />
+                  <input
+                    type="email"
+                    style={formInput}
+                    name=""
+                    id=""
+                    placeholder="Email"
+                    className="w-100 text-center"
+                  />
                   <hr style={{ margin: 0, padding: 0 }} />
-                  <input type="password" style={formInput} name="" id="" />
+                  <input
+                    type="password"
+                    style={formInput}
+                    name=""
+                    id=""
+                    placeholder="Password"
+                    className="w-100 text-center"
+                  />
                 </form>
                 <Button className="btn btn-lg btn-primary text-center w-100 mt-5">
                   Login
