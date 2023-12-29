@@ -45,10 +45,8 @@ export default function Menu() {
             >
               Shop
             </Navbar.Brand>
-            <span className=" fs-4 text-primary">
-              {isWishlistPage || isChart || isProfile
-                ? ` | ${activeLabel}`
-                : ""}
+            <span className="fs-4 text-primary">
+              {isWishlistPage || isChart || isProfile ? ` ${activeLabel}` : ""}
             </span>
             {/* Search bar */}
             <Navbar.Toggle

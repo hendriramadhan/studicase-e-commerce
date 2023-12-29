@@ -120,6 +120,11 @@ span#nav-dropdown-dark-example.dropdown-toggle::after {
   display: none;
 }
 
+span.fs-4.text-primary {
+  border-left: 1px solid #0d6efd !important;
+  padding-left: 13px;
+}
+
 /* DISKON SLIDE */
 
 .dot {
